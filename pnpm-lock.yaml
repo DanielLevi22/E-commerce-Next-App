@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@t3-oss/env-nextjs':
+        specifier: 0.9.1
+        version: 0.9.1(typescript@5.3.2)(zod@3.22.4)
       cypress:
         specifier: ^13.10.0
         version: 13.10.0
@@ -223,6 +226,24 @@ packages:
 
   '@swc/helpers@0.5.2':
     resolution: {integrity: sha512-E4KcWTpoLHqwPHLxidpOqQbcrZVgi0rsmmZXUle1jXmJfuIf/UWpczUJ7MZZ5tlxytgJXyp0w4PGkkeLiuIdZw==}
+
+  '@t3-oss/env-core@0.9.1':
+    resolution: {integrity: sha512-QgR4jV2BmRMdq+in5DbI9Ox/mgpNM/b1H1wB6a0Zf015RsuLk12mIC9FKzDtLITgSSSI/Gt8ZbarqugAUtRslw==}
+    peerDependencies:
+      typescript: '>=5.0.0'
+      zod: ^3.0.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
+  '@t3-oss/env-nextjs@0.9.1':
+    resolution: {integrity: sha512-c5JbI8ADarxhItsimm0fnbrr6YLFC+8l509IFlc6v0Y6aEaAidhJkRj+SwyKtKzz/6gJ4c98vxd5kOLb3FoGWQ==}
+    peerDependencies:
+      typescript: '>=5.0.0'
+      zod: ^3.0.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
@@ -2359,6 +2380,19 @@ snapshots:
   '@swc/helpers@0.5.2':
     dependencies:
       tslib: 2.6.2
+
+  '@t3-oss/env-core@0.9.1(typescript@5.3.2)(zod@3.22.4)':
+    dependencies:
+      zod: 3.22.4
+    optionalDependencies:
+      typescript: 5.3.2
+
+  '@t3-oss/env-nextjs@0.9.1(typescript@5.3.2)(zod@3.22.4)':
+    dependencies:
+      '@t3-oss/env-core': 0.9.1(typescript@5.3.2)(zod@3.22.4)
+      zod: 3.22.4
+    optionalDependencies:
+      typescript: 5.3.2
 
   '@types/json-schema@7.0.15': {}
 
