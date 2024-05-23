@@ -9,7 +9,7 @@ describe('add product to cart', () => {
 
   it('should be able to navigation to the product page and add it to thee cart', () => {
   
-
+    cy.searchByQuery('moletom')
     cy.get('a[href^="/product"]').first().click()
 
     cy.url().should('include', '/product')
